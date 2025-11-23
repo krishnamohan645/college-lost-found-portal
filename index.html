@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>College Lost Found Portal UI</title>
+  </head>
+  <body>
+    <header class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <div
+            class="flex items-center space-x-2 cursor-pointer"
+            onclick="navigateTo('home')"
+          >
+            <div
+              class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-4.35-4.35m0 0A7.5 7.5 0 1 0 5.1 5.1a7.5 7.5 0 0 0 11.55 11.55Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-xl font-semibold text-gray-900">
+                Lost &amp; Found
+              </h1>
+              <p class="text-xs text-gray-500">College Portal</p>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="hidden md:flex space-x-1">
+            <a
+              href="pages/home.html"
+              class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50"
+            >
+              Home
+            </a>
+            <a
+              href="pages/lostItem.html"
+              class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50"
+            >
+              Report Lost Item
+            </a>
+            <a
+              href="pages/foundItem.html"
+              class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50"
+            >
+              Report Found Item
+            </a>
+            <a
+              href="pages/searchItem.html"
+              class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50"
+            >
+              Search Items
+            </a>
+            <a
+              href="pages/login.html"
+              class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50"
+            >
+              Admin Login
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Redirect to home page -->
+    <script>
+      window.location.href = 'pages/home.html';
+    </script>
+  </body>
+</html>
